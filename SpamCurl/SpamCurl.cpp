@@ -21,7 +21,7 @@ void checknumber(std::string cyfra, int probanr) {
     curl = curl_easy_init();
     if (curl) {
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "GET");
-        std::string url = "https://hostgier.pl/blackfriday/submit.php?password=";
+        std::string url = "https://link do hostgier/blackfriday/submit.php?password=";
         url.append(cyfra);
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
         curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
